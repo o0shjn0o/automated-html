@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class InputAndCheck {
 	
-	@Test
+	
 	public void Input() {
 		System.setProperty("webdriver.chrome.driver", ".\\Webdrivers\\chromedriver.exe");
 		WebDriver wd = new ChromeDriver();
@@ -42,7 +42,7 @@ public class InputAndCheck {
 		Assert.assertEquals(contentMsg, "firstname=Long&lastname=Le ");
 		
 		
-		wd.close();
+		wd.quit();
 	}
 
 }
